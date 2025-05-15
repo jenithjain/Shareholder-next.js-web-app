@@ -54,7 +54,7 @@ const stockDatabase: { [key: string]: { name: string; sector: string; industry: 
   }
 };
 
-const ALPHA_VANTAGE_API_KEY = "4OOAM7M1KW4AEEC5";
+const ALPHA_VANTAGE_API_KEY ="********************";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -131,8 +131,8 @@ async function fetchWebSearchData(symbol: string) {
     // Search query for the stock
     const searchQuery = encodeURIComponent(`${symbol} stock NSE India moneycontrol shareholding pattern`);
     
-    const apiKey = "AIzaSyCwXnFaKW-y8y67gCzYTJJZCPhLKrIcx0U";
-    const cx = "1389a4bea5ecf4890";
+    const apiKey = "***********************";
+    const cx = "******************************";
     
     console.log(`Performing web search for: ${symbol}`);
     
