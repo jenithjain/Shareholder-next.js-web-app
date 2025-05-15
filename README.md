@@ -28,28 +28,33 @@ The **NSE Shareholding Pattern Analyzer** is a web application built with **Next
 - A free **Alpha Vantage API key** (obtainable from [https://www.alphavantage.co](https://www.alphavantage.co)).
 - Basic understanding of web scraping and NSE's terms of service (note: web scraping NSE may require permission, as it is deemed illegal without consent per NSE's terms).
 
-File Structure
+# Project File Structure
+
+Below is the file structure for the project located at `d:\Nimrobo\temp-project\`:
+
+```plaintext
 d:\Nimrobo\temp-project\
-│
 ├── app\
 │   ├── api\
-│   │   └── shareholding\
-│   │       └── route.ts
-│   │
+│   │   ├── analyze\
+│   │   │   └── route.ts
+│   │   ├── shareholding\
+│   │   │   └── route.ts
+│   │   └── utils\
+│   │       └── geminiAI.ts(Gemini LLM)
 │   ├── components\
-│   │   └── Loading.tsx
-│   │
+│   │   ├── Loading.tsx
+│   │   └── ErrorMessage.tsx
 │   ├── layout.tsx
 │   ├── page.tsx
 │   ├── globals.css
-│   └── types.ts (Gemini LLM)
-│
+│   └── types.ts
 ├── public\
 │   └── (your static assets)
-│
 ├── .gitignore
 ├── package.json
 ├── README.md
 ├── tailwind.config.js
 ├── next.config.js
+├── postcss.config.mjs
 └── tsconfig.json
