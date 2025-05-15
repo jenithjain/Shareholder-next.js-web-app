@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Initialize the Gemini API with your API key
-const genAI = new GoogleGenerativeAI("AIzaSyBB8WDwvDwF8ZRMqyOZN52yfwWsj9mq_SY");
+const genAI = new GoogleGenerativeAI("***********************************");
 
 export async function analyzeStockData(symbol: string, rawHtml: string) {
   try {
