@@ -1,5 +1,11 @@
 # NSE Shareholding Pattern Analyzer
 
+
+
+https://github.com/user-attachments/assets/a2ce0af6-e2fa-4da1-b436-4a54955ed95e
+
+
+
 ## Overview
 
 The **NSE Shareholding Pattern Analyzer** is a web application built with **Next.js** that provides real-time shareholding data for companies listed on the **National Stock Exchange (NSE)** of India. It integrates a **web scraper** to extract shareholding patterns from the NSE website and leverages the **Alpha Vantage API** for additional financial data, such as stock prices and technical indicators. The application uses **Tailwind CSS** for responsive styling and **Chart.js** for interactive data visualizations.
@@ -22,3 +28,28 @@ The **NSE Shareholding Pattern Analyzer** is a web application built with **Next
 - A free **Alpha Vantage API key** (obtainable from [https://www.alphavantage.co](https://www.alphavantage.co)).
 - Basic understanding of web scraping and NSE's terms of service (note: web scraping NSE may require permission, as it is deemed illegal without consent per NSE's terms).
 
+File Structure
+d:\Nimrobo\temp-project\
+│
+├── app\
+│   ├── api\
+│   │   └── shareholding\
+│   │       └── route.ts
+│   │
+│   ├── components\
+│   │   └── Loading.tsx
+│   │
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   └── types.ts (Gemini LLM)
+│
+├── public\
+│   └── (your static assets)
+│
+├── .gitignore
+├── package.json
+├── README.md
+├── tailwind.config.js
+├── next.config.js
+└── tsconfig.json
